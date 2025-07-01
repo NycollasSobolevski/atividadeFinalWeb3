@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+*{padding:0; margin:0; border:0; box-sizing:border-box;}
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+}
+.main-header {
+  background-color: #1e3a8a; 
+  color: #ffffff;        
+  display: flex;         
+  align-items: center;    
+  justify-content: space-between; 
+  padding: 1rem;            
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    
+    img{
+    	width: 24px; 
+    }
+    
+}
+.logo-image {
+  height: 1.5rem;
+  width: auto;      
+}
+.logo-text {
+  font-size: 1.25rem;  
+  line-height: 1.75rem; 
+  font-weight: 700;    
+}
+
+main {
+	position: absolute;
+	top: 4rem;
+}
+
+@import "tailwindcss";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: bolder;
+
+}
+h5 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+button {
+  padding: .75rem 1.5rem;
+  background-color: #4260ae;
+  color: white;
+  border-radius: .5rem;
+  cursor: pointer;
+
+
+  &.link {
+    background-color: transparent;
+    color: #4260ae;
+    text-decoration: solid;
+    padding: .5rem 1rem;
+  }
+  &.danger{
+    background-color: rgb(255, 38, 38);
+  }
+  &.icon_btn {
+    display: flex;
+    padding: .5rem;
+  }
+  &.seccondary {
+    background-color: transparent;
+    color: #4260ae;
+  }
+}
+input {
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  background-color: rgb(175, 218, 255);
+
+  &::placeholder{
+    color: #4261ae89;
+  }
+  &:focus {
+    outline: none;
+    background-color: rgb(219, 238, 255);
+
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Às vezes, o margin precisa ser ajustado também */
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #b9c7ec;
+  }
+}
+
+
+/*! modal settings */
+.modal {
+  .modal-bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;bottom: 0;left: 0;right: 0;
+    height: 100%;
+
+    backdrop-filter: blur(15px);
+  }
+  .container{
+    z-index: 2;
+    position: absolute;
+    width: 45rem;
+    height: 45rem;
+    background-color: azure;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+
+    .modal-top {
+      width: 100%;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content:  space-between;
+      padding: 1rem;
+      border-bottom: 1px solid black;
+    }
+
+  }
+}
+
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
