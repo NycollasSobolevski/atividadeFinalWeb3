@@ -15,24 +15,8 @@
 </head>
 <body>
 
-	<header class="main-header">
-	  <div class="logo-container">
-	    <div class="logo-brand">
-	    	<img  src="images/ParkFlowLogo.png" alt="logo"/>
-	      <span class="logo-text">PARKFLOW</span>
-	    </div>
-	  </div>
-	</header>
-	<main>
-	
-	<section class="page_top">
-		<h1>Empresas</h1>
-		<div class="counter_container"><h3> Empresas Cadastradas  </h3></div>
-	</section>
 
-	<section class="chart_section align">
-	
-		<div class="chart"></div>
+	<main>
 		<div class="mini_table">
 			<span class="table_header align">
 				<h3>Instalações/Manutenções Agendadas</h3>
@@ -184,6 +168,8 @@
 	}
 	
 	const toggledelete = () => {
+	    const iid = document.getElementById("maintenanceId");
+
 	    const action = document.getElementById("maintenanceAction");
 	    action.value = "DELETE";
 		const confirmed = confirm("Voce tem certeza que deseja excluir esse item? (" + iid.value + ")");

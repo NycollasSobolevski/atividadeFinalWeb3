@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import "tailwindcss";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 *{padding:0; margin:0; border:0; box-sizing:border-box;}
 
@@ -42,12 +45,9 @@ header {
 
 main {
 	position: absolute;
-	top: 4rem;
+	/*top: 4rem;*/
 }
 
-@import "tailwindcss";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 h1 {
   font-size: 1.75rem;

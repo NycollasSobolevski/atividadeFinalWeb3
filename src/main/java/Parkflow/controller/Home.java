@@ -10,6 +10,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+import com.google.gson.Gson;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -89,5 +92,13 @@ public class Home extends HttpServlet {
 		System.out.println(action + " Successfully");
 		response.sendRedirect(request.getContextPath() + "/home"); 
 
+	}
+	
+	private void getChartData() {
+		
+		
+		Map<String, String> graphData = new LinkedHashMap<>();
+		
+		
 	}
 }
